@@ -1,3 +1,4 @@
 /Qt/qtbase/src/3rdparty/gradle/gradlew text eol=lf
 /Qt/qtbase/util/unicode/data/*.txt text eol=lf
 /Tools/mingw1120_64/**/* -text -eol
+/Tools/python/**/* -text -eol
