@@ -102,7 +102,7 @@ private:
     friend class QJsonArray;
     friend class QJsonObject;
     friend class QCborValue;
-    friend Q_CORE_EXPORT QDebug operator<<(QDebug, const QJsonValue &);
+    //friend Q_CORE_EXPORT QDebug operator<<(QDebug, const QJsonValue &);
     friend Q_CORE_EXPORT QDataStream &operator<<(QDataStream &, const QJsonValue &);
 
     QCborValue value;
@@ -299,7 +299,7 @@ inline bool operator!=(const QJsonValueRef &lhs, const QJsonValueRef &rhs)
 
 Q_CORE_EXPORT size_t qHash(const QJsonValue &value, size_t seed = 0);
 
-#if !defined(QT_NO_DEBUG_STREAM) && !defined(QT_JSON_READONLY)
+#if 0//!defined(QT_NO_DEBUG_STREAM) && !defined(QT_JSON_READONLY)
 Q_CORE_EXPORT QDebug operator<<(QDebug, const QJsonValue &);
 #endif
 

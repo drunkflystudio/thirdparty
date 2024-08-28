@@ -1166,7 +1166,7 @@ bool QFileSystemEngine::createLink(const QFileSystemEntry &source, const QFileSy
     return false;
 }
 
-#ifdef Q_OS_DARWIN
+#if 1//def Q_OS_DARWIN
 // see qfilesystemengine_mac.mm
 #elif defined(QT_BOOTSTRAPPED) || !defined(AT_FDCWD)
 // bootstrapped tools don't need this, and we don't want QStorageInfo

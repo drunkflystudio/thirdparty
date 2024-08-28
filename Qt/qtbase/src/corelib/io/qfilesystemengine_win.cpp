@@ -1770,6 +1770,7 @@ bool QFileSystemEngine::removeFile(const QFileSystemEntry &entry, QSystemError &
     return ret;
 }
 
+#if 0
 /*
     If possible, we use the IFileOperation implementation, which allows us to determine
     the location of the object in the trash.
@@ -1825,6 +1826,7 @@ bool QFileSystemEngine::moveFileToTrash(const QFileSystemEntry &source,
     newLocation = QFileSystemEntry(sink->targetPath);
     return true;
 }
+#endif
 
 //static
 bool QFileSystemEngine::setPermissions(const QFileSystemEntry &entry,

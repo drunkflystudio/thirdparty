@@ -1101,7 +1101,7 @@ size_t qHash(const QJsonValue &value, size_t seed)
     Q_UNREACHABLE_RETURN(0);
 }
 
-#if !defined(QT_NO_DEBUG_STREAM) && !defined(QT_JSON_READONLY)
+#if 0//!defined(QT_NO_DEBUG_STREAM) && !defined(QT_JSON_READONLY)
 QDebug operator<<(QDebug dbg, const QJsonValue &o)
 {
     QDebugStateSaver saver(dbg);

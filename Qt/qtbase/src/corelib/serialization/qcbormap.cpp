@@ -1683,7 +1683,7 @@ size_t qHash(const QCborMap &map, size_t seed)
     return qHashRange(map.begin(), map.end(), seed);
 }
 
-#if !defined(QT_NO_DEBUG_STREAM)
+#if 0//!defined(QT_NO_DEBUG_STREAM)
 QDebug operator<<(QDebug dbg, const QCborMap &m)
 {
     QDebugStateSaver saver(dbg);

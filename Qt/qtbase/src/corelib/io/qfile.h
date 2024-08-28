@@ -210,6 +210,7 @@ public:
     }
 #endif // QT_CONFIG(cxx17_filesystem)
 
+#if 0
     bool moveToTrash();
     static bool moveToTrash(const QString &fileName, QString *pathInTrash = nullptr);
 #ifdef Q_QDOC
@@ -221,6 +222,7 @@ public:
         return moveToTrash(QtPrivate::fromFilesystemPath(fileName), pathInTrash);
     }
 #endif // QT_CONFIG(cxx17_filesystem)
+#endif
 
     bool rename(const QString &newName);
     static bool rename(const QString &oldName, const QString &newName);

@@ -763,6 +763,7 @@ void QJniObject::callVoidMethodV(JNIEnv *env, jmethodID id, va_list args) const
 #endif // Q_OS_ANDROID
 
 #include "qlocale.h"
+#include "qstringlist.h"
 
 QStringList QLocale::uiLanguages() const
 {
@@ -779,6 +780,7 @@ QString QLocale::bcp47Name() const
     return bcp47Name(TagSeparator::Dash);
 }
 
+#if QT_CONFIG(datestring)
 QDate QLocale::toDate(const QString &string, FormatType format) const
 {
     return toDate(string, dateFormat(format), DefaultTwoDigitBaseYear);
@@ -818,6 +820,7 @@ QDateTime QLocale::toDateTime(const QString &string, const QString &format, QCal
 {
     return toDateTime(string, format, cal, DefaultTwoDigitBaseYear);
 }
+#endif
 
 #include "qobject.h"
 

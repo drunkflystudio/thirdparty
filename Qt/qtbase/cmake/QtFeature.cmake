@@ -606,14 +606,20 @@ function(qt_evaluate_feature_definition key)
 
     if(actual STREQUAL expected)
         set(indent "")
+        string(APPEND msg "\n")
         if(arg_PREREQUISITE)
             string(APPEND msg "#if ${arg_PREREQUISITE}\n")
             set(indent "  ")
         endif()
         if (arg_VALUE)
+            string(APPEND msg "${indent}#ifdef ${arg_NAME}\n")
+            string(APPEND msg "${indent}#undef ${arg_NAME}\n")
+            string(APPEND msg "${indent}#endif\n")
             string(APPEND msg "${indent}#define ${arg_NAME} ${arg_VALUE}\n")
         else()
+            string(APPEND msg "${indent}#ifndef ${arg_NAME}\n")
             string(APPEND msg "${indent}#define ${arg_NAME}\n")
+            string(APPEND msg "${indent}#endif\n")
         endif()
         if(arg_PREREQUISITE)
             string(APPEND msg "#endif\n")
@@ -907,10 +913,10 @@ function(qt_internal_detect_dirty_features)
 
         if(dirty_build)
             set_property(GLOBAL PROPERTY _qt_dirty_build TRUE)
-            message(WARNING
-                "Due to detected feature set changes, dependent features "
-                "will be re-computed automatically. This might cause a lot of files to be rebuilt. "
-                "To disable this behavior, configure with -DQT_NO_FEATURE_AUTO_RESET=ON")
+            #message(WARNING
+            #    "Due to detected feature set changes, dependent features "
+            #    "will be re-computed automatically. This might cause a lot of files to be rebuilt. "
+            #    "To disable this behavior, configure with -DQT_NO_FEATURE_AUTO_RESET=ON")
         endif()
     endif()
 endfunction()

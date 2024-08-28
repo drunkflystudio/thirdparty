@@ -1,6 +1,9 @@
 # The real minimum version will be checked by the qtbase project.
 # 3.16 is the absolute minimum though.
 cmake_minimum_required(VERSION 3.16...3.21)
+set(QT_SILENCE_CMAKE_GENERATOR_WARNING TRUE)
+add_definitions(-DQT_NO_DEBUG_OUTPUT)
+add_definitions(-DQT_NO_QUATERNION)
 
 # set QT_SUPERBUILD early, so that qtbase/.cmake.conf can check it
 set(QT_SUPERBUILD TRUE)
@@ -18,6 +21,10 @@ project(Qt
     HOMEPAGE_URL "https://qt.io/"
     LANGUAGES CXX C ASM
 )
+if(NOT MSVC)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fno-ident -fno-plt -fvisibility=hidden")
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fno-ident -fno-plt -fvisibility=hidden")
+endif()
 
 qt_internal_top_level_setup_after_project()
 

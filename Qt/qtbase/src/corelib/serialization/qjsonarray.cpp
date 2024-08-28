@@ -1056,7 +1056,7 @@ size_t qHash(const QJsonArray &array, size_t seed)
     return qHashRange(array.begin(), array.end(), seed);
 }
 
-#if !defined(QT_NO_DEBUG_STREAM) && !defined(QT_JSON_READONLY)
+#if 0//!defined(QT_NO_DEBUG_STREAM) && !defined(QT_JSON_READONLY)
 QDebug operator<<(QDebug dbg, const QJsonArray &a)
 {
     QDebugStateSaver saver(dbg);

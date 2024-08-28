@@ -242,7 +242,7 @@ private:
     friend class QJsonValueConstRef;
     friend class QJsonValueRef;
     friend class QCborMap;
-    friend Q_CORE_EXPORT QDebug operator<<(QDebug, const QJsonObject &);
+    //friend Q_CORE_EXPORT QDebug operator<<(QDebug, const QJsonObject &);
 
     QJsonObject(QCborContainerPrivate *object);
     bool detach(qsizetype reserve = 0);
@@ -277,7 +277,7 @@ inline QJsonValueConstRef::QJsonValueConstRef(QJsonObject *o, qsizetype idx)
 
 Q_CORE_EXPORT size_t qHash(const QJsonObject &object, size_t seed = 0);
 
-#if !defined(QT_NO_DEBUG_STREAM) && !defined(QT_JSON_READONLY)
+#if 0//!defined(QT_NO_DEBUG_STREAM) && !defined(QT_JSON_READONLY)
 Q_CORE_EXPORT QDebug operator<<(QDebug, const QJsonObject &);
 #endif
 

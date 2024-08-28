@@ -1171,7 +1171,7 @@ size_t qHash(const QCborArray &array, size_t seed)
     return qHashRange(array.begin(), array.end(), seed);
 }
 
-#if !defined(QT_NO_DEBUG_STREAM)
+#if 0//!defined(QT_NO_DEBUG_STREAM)
 QDebug operator<<(QDebug dbg, const QCborArray &a)
 {
     QDebugStateSaver saver(dbg);

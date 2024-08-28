@@ -345,7 +345,7 @@ inline QCborMap QCborValueConstRef::toMap(const QCborMap &m) const
 
 Q_CORE_EXPORT size_t qHash(const QCborMap &map, size_t seed = 0);
 
-#if !defined(QT_NO_DEBUG_STREAM)
+#if 0//!defined(QT_NO_DEBUG_STREAM)
 Q_CORE_EXPORT QDebug operator<<(QDebug, const QCborMap &m);
 #endif
 

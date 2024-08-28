@@ -107,7 +107,7 @@ public:
 private:
     friend class QJsonValue;
     friend class QJsonPrivate::Parser;
-    friend Q_CORE_EXPORT QDebug operator<<(QDebug, const QJsonDocument &);
+    //friend Q_CORE_EXPORT QDebug operator<<(QDebug, const QJsonDocument &);
 
     QJsonDocument(const QCborValue &data);
 
@@ -116,7 +116,7 @@ private:
 
 Q_DECLARE_SHARED(QJsonDocument)
 
-#if !defined(QT_NO_DEBUG_STREAM) && !defined(QT_JSON_READONLY)
+#if 0//!defined(QT_NO_DEBUG_STREAM) && !defined(QT_JSON_READONLY)
 Q_CORE_EXPORT QDebug operator<<(QDebug, const QJsonDocument &);
 #endif
 

@@ -1231,11 +1231,11 @@ qt_configure_add_summary_entry(ARGS "system-zlib")
 qt_configure_add_summary_entry(ARGS "zstd")
 qt_configure_add_summary_entry(ARGS "thread")
 qt_configure_end_summary_section() # end of "Support enabled for" section
-qt_configure_add_report_entry(
-    TYPE NOTE
-    MESSAGE "Using static linking will disable the use of dynamically loaded plugins. Make sure to import all needed static plugins, or compile needed modules into the library."
-    CONDITION NOT QT_FEATURE_shared
-)
+#qt_configure_add_report_entry(
+#    TYPE NOTE
+#    MESSAGE "Using static linking will disable the use of dynamically loaded plugins. Make sure to import all needed static plugins, or compile needed modules into the library."
+#    CONDITION NOT QT_FEATURE_shared
+#)
 qt_configure_add_report_entry(
     TYPE WARNING
     MESSAGE "-debug-and-release is only supported on Darwin and Windows platforms.  Qt can be built in release mode with separate debug information, so -debug-and-release is no longer necessary."

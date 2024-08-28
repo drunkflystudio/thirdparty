@@ -90,7 +90,7 @@ public:
     QString toString() const;
 };
 
-#if !defined(QT_NO_DEBUG_STREAM)
+#if 0//!defined(QT_NO_DEBUG_STREAM)
 Q_CORE_EXPORT QDebug operator<<(QDebug, QCborSimpleType st);
 Q_CORE_EXPORT QDebug operator<<(QDebug, QCborKnownTags tg);
 Q_CORE_EXPORT QDebug operator<<(QDebug, QCborTag tg);

@@ -277,7 +277,7 @@ inline QCborArray QCborValueConstRef::toArray(const QCborArray &a) const
 
 Q_CORE_EXPORT size_t qHash(const QCborArray &array, size_t seed = 0);
 
-#if !defined(QT_NO_DEBUG_STREAM)
+#if 0//!defined(QT_NO_DEBUG_STREAM)
 Q_CORE_EXPORT QDebug operator<<(QDebug, const QCborArray &a);
 #endif
 

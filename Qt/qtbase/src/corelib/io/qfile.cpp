@@ -452,6 +452,7 @@ QFile::remove(const QString &fileName)
     return QFile(fileName).remove();
 }
 
+#if 0
 /*!
     \since 5.15
 
@@ -532,6 +533,7 @@ QFile::moveToTrash(const QString &fileName, QString *pathInTrash)
     }
     return false;
 }
+#endif
 
 /*!
     Renames the file currently specified by fileName() to \a newName.

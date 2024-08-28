@@ -1382,10 +1382,12 @@ static constexpr struct : QMetaTypeModuleHelper
             result = QCborArray::fromStringList(source);
             return true;
         );
+#if QT_CONFIG(datestring)
         QMETATYPE_CONVERTER(QCborValue, QDate,
             result = QCborValue(source.startOfDay());
             return true;
         );
+#endif
         QMETATYPE_CONVERTER_ASSIGN(QCborValue, QUrl);
         QMETATYPE_CONVERTER(QCborValue, QJsonValue,
             result = QCborValue::fromJsonValue(source);
@@ -1410,6 +1412,7 @@ static constexpr struct : QMetaTypeModuleHelper
         QMETATYPE_CONVERTER_ASSIGN(QCborValue, QCborMap);
         QMETATYPE_CONVERTER_ASSIGN(QCborValue, QCborArray);
 
+#if QT_CONFIG(datestring)
         QMETATYPE_CONVERTER_ASSIGN(QCborValue, QDateTime);
         QMETATYPE_CONVERTER(QDateTime, QCborValue,
             if (source.isDateTime()) {
@@ -1418,6 +1421,7 @@ static constexpr struct : QMetaTypeModuleHelper
             }
             return false;
         );
+#endif
 
         QMETATYPE_CONVERTER_ASSIGN(QCborValue, QCborSimpleType);
         QMETATYPE_CONVERTER(QCborSimpleType, QCborValue,

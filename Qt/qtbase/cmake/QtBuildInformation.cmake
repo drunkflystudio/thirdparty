@@ -28,13 +28,13 @@ function(qt_print_feature_summary)
     endif()
 
     # Show which packages were found.
-    feature_summary(INCLUDE_QUIET_PACKAGES
-                    WHAT PACKAGES_FOUND
-                         REQUIRED_PACKAGES_NOT_FOUND
-                         RECOMMENDED_PACKAGES_NOT_FOUND
-                         OPTIONAL_PACKAGES_NOT_FOUND
-                         RUNTIME_PACKAGES_NOT_FOUND
-                         FATAL_ON_MISSING_REQUIRED_PACKAGES)
+    #feature_summary(INCLUDE_QUIET_PACKAGES
+    #                WHAT PACKAGES_FOUND
+    #                     REQUIRED_PACKAGES_NOT_FOUND
+    #                     RECOMMENDED_PACKAGES_NOT_FOUND
+    #                     OPTIONAL_PACKAGES_NOT_FOUND
+    #                     RUNTIME_PACKAGES_NOT_FOUND
+    #                     FATAL_ON_MISSING_REQUIRED_PACKAGES)
     qt_internal_run_additional_summary_checks()
     qt_configure_print_summary()
 endfunction()
@@ -95,23 +95,23 @@ function(qt_print_build_instructions)
 
     list(APPEND msg "Qt is now configured for building. Just run '${build_command}'\n")
     if(QT_WILL_INSTALL)
-        list(APPEND msg "Once everything is built, you must run '${install_command}'")
-        list(APPEND msg "Qt will be installed into '${CMAKE_INSTALL_PREFIX}'")
+        #list(APPEND msg "Once everything is built, you must run '${install_command}'")
+        #list(APPEND msg "Qt will be installed into '${CMAKE_INSTALL_PREFIX}'")
     else()
-        list(APPEND msg
-            "Once everything is built, Qt is installed. You should NOT run '${install_command}'")
+        #list(APPEND msg
+        #    "Once everything is built, Qt is installed. You should NOT run '${install_command}'")
         list(APPEND msg
             "Note that this build cannot be deployed to other machines or devices.")
     endif()
-    list(APPEND msg
-        "\nTo configure and build other Qt modules, you can use the following convenience script:
-        ${local_install_prefix}/${INSTALL_BINDIR}/${configure_module_command}")
-    list(APPEND msg "\nIf reconfiguration fails for some reason, try removing 'CMakeCache.txt' \
-from the build directory")
+    #list(APPEND msg
+    #    "\nTo configure and build other Qt modules, you can use the following convenience script:
+    #    ${local_install_prefix}/${INSTALL_BINDIR}/${configure_module_command}")
+    #list(APPEND msg "\nIf reconfiguration fails for some reason, try removing 'CMakeCache.txt' \
+#from the build directory")
     if(CMAKE_VERSION VERSION_GREATER_EQUAL "3.24")
-        list(APPEND msg "Alternatively, you can add the --fresh flag to your CMake flags.\n")
+        #list(APPEND msg "Alternatively, you can add the --fresh flag to your CMake flags.\n")
     else()
-        list(APPEND msg "\n")
+        #list(APPEND msg "\n")
     endif()
 
     list(JOIN msg "\n" msg)
