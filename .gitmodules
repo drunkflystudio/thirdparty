@@ -1,0 +1,3 @@
+[submodule "Tools/emsdk"]
+	path = Tools/emsdk
+	url = https://github.com/emscripten-core/emsdk.git
