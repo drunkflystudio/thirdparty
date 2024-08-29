@@ -224,6 +224,7 @@ QDateTime QAsn1Element::toDateTime() const
     if (mValue.back() != 'Z')
         return result;
 
+#if QT_CONFIG(datestring)
     if (mType == UtcTimeType && mValue.size() == 13) {
         // RFC 2459:
         //   Where YY is greater than or equal to 50, the year shall be
@@ -248,6 +249,7 @@ QDateTime QAsn1Element::toDateTime() const
     } else if (mType == GeneralizedTimeType && mValue.size() == 15) {
         result = QDateTime::fromString(QString::fromLatin1(mValue), u"yyyyMMddHHmmsst");
     }
+#endif
 
     return result;
 }

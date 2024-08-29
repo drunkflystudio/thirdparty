@@ -55,16 +55,19 @@ call configure ^
     --feature-clipboard ^
     --feature-columnview ^
     --feature-completer ^
+    --feature-concurrent ^
     --feature-datawidgetmapper ^
     --feature-dockwidget ^
     --feature-doubleconversion ^
     --feature-draganddrop ^
     --feature-formlayout ^
+    --feature-future ^
     --feature-gc_binaries ^
     --feature-gestures ^
     --feature-graphicseffect ^
     --feature-imageformatplugin ^
     --feature-imageformat_bmp ^
+    --feature-imageformat_jpeg ^
     --feature-imageformat_ppm ^
     --feature-imageformat_xbm ^
     --feature-imageformat_xpm ^
@@ -72,10 +75,12 @@ call configure ^
     --feature-image_text ^
     --feature-inputdialog ^
     --feature-itemmodel ^
+    --feature-jpeg ^
     --feature-label ^
     --feature-listwidget ^
     --feature-mimetype ^
     --feature-mimetype-database ^
+    --feature-network ^
     --feature-optimize_full ^
     --feature-pcre2 ^
     --feature-png ^
@@ -91,8 +96,11 @@ call configure ^
     --feature-textbrowser ^
     --feature-textedit ^
     --feature-texthtmlparser ^
+    --feature-thread ^
+    --feature-translation ^
     --feature-treewidget ^
     --feature-widgettextcontrol ^
+    --feature-xml ^
     --feature-xmlstream ^
     --feature-xmlstreamreader ^
     --feature-xmlstreamwriter ^
@@ -106,7 +114,6 @@ call configure ^
     --no-feature-commandlineparser ^
     --no-feature-commandlinkbutton ^
     --no-feature-concatenatetablesproxymodel ^
-    --no-feature-concurrent ^
     --no-feature-ctf ^
     --no-feature-cxx17_filesystem ^
     --no-feature-datestring ^
@@ -130,18 +137,15 @@ call configure ^
     --no-feature-fontcombobox ^
     --no-feature-fontdialog ^
     --no-feature-fscompleter ^
-    --no-feature-future ^
     --no-feature-gtk3 ^
     --no-feature-hijricalendar ^
     --no-feature-icu ^
     --no-feature-identityproxymodel ^
     --no-feature-im ^
-    --no-feature-imageformat_jpeg ^
     --no-feature-intelcet ^
     --no-feature-islamiccivilcalendar ^
     --no-feature-jalalicalendar ^
     --no-feature-journald ^
-    --no-feature-jpeg ^
     --no-feature-keysequenceedit ^
     --no-feature-kms ^
     --no-feature-lcdnumber ^
@@ -149,7 +153,6 @@ call configure ^
     --no-feature-macdeployqt ^
     --no-feature-mdiarea ^
     --no-feature-movie ^
-    --no-feature-network ^
     --no-feature-no_direct_extern_access ^
     --no-feature-pdf ^
     --no-feature-permissions ^
@@ -173,10 +176,8 @@ call configure ^
     --no-feature-textmarkdownreader ^
     --no-feature-textmarkdownwriter ^
     --no-feature-textodfwriter ^
-    --no-feature-thread ^
     --no-feature-timezone ^
     --no-feature-toolbox ^
-    --no-feature-translation ^
     --no-feature-transposeproxymodel ^
     --no-feature-undostack ^
     --no-feature-undocommand ^
@@ -185,7 +186,6 @@ call configure ^
     --no-feature-vulkan ^
     --no-feature-whatsthis ^
     --no-feature-wizard ^
-    --no-feature-xml ^
     ^
     || exit /B 1
 

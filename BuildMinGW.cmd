@@ -44,6 +44,7 @@ call configure ^
     --feature-columnview ^
     --feature-commandlineparser ^
     --feature-completer ^
+    --feature-concurrent ^
     --feature-datawidgetmapper ^
     --feature-direct2d ^
     --feature-direct2d1_1 ^
@@ -58,12 +59,14 @@ call configure ^
     --feature-filesystemwatcher ^
     --feature-formlayout ^
     --feature-fscompleter ^
+    --feature-future ^
     --feature-gc_binaries ^
     --feature-gestures ^
     --feature-graphicseffect ^
     --feature-im ^
     --feature-imageformatplugin ^
     --feature-imageformat_bmp ^
+    --feature-imageformat_jpeg ^
     --feature-imageformat_ppm ^
     --feature-imageformat_xbm ^
     --feature-imageformat_xpm ^
@@ -71,11 +74,13 @@ call configure ^
     --feature-image_text ^
     --feature-inputdialog ^
     --feature-itemmodel ^
+    --feature-jpeg ^
     --feature-label ^
     --feature-library ^
     --feature-listwidget ^
     --feature-mimetype ^
     --feature-mimetype-database ^
+    --feature-network ^
     --feature-optimize_full ^
     --feature-pcre2 ^
     --feature-png ^
@@ -95,8 +100,10 @@ call configure ^
     --feature-textedit ^
     --feature-texthtmlparser ^
     --feature-thread ^
+    --feature-translation ^
     --feature-treewidget ^
     --feature-widgettextcontrol ^
+    --feature-xml ^
     --feature-xmlstream ^
     --feature-xmlstreamreader ^
     --feature-xmlstreamwriter ^
@@ -108,7 +115,6 @@ call configure ^
     --no-feature-cborstreamwriter ^
     --no-feature-commandlinkbutton ^
     --no-feature-concatenatetablesproxymodel ^
-    --no-feature-concurrent ^
     --no-feature-ctf ^
     --no-feature-cxx17_filesystem ^
     --no-feature-datestring ^
@@ -123,24 +129,20 @@ call configure ^
     --no-feature-f16c ^
     --no-feature-fontcombobox ^
     --no-feature-fontdialog ^
-    --no-feature-future ^
     --no-feature-gtk3 ^
     --no-feature-hijricalendar ^
     --no-feature-icu ^
     --no-feature-identityproxymodel ^
-    --no-feature-imageformat_jpeg ^
     --no-feature-intelcet ^
     --no-feature-islamiccivilcalendar ^
     --no-feature-jalalicalendar ^
     --no-feature-journald ^
-    --no-feature-jpeg ^
     --no-feature-keysequenceedit ^
     --no-feature-kms ^
     --no-feature-lcdnumber ^
     --no-feature-macdeployqt ^
     --no-feature-mdiarea ^
     --no-feature-movie ^
-    --no-feature-network ^
     --no-feature-pdf ^
     --no-feature-permissions ^
     --no-feature-picture ^
@@ -162,7 +164,6 @@ call configure ^
     --no-feature-textodfwriter ^
     --no-feature-timezone ^
     --no-feature-toolbox ^
-    --no-feature-translation ^
     --no-feature-transposeproxymodel ^
     --no-feature-undostack ^
     --no-feature-undocommand ^
@@ -171,7 +172,6 @@ call configure ^
     --no-feature-vulkan ^
     --no-feature-whatsthis ^
     --no-feature-wizard ^
-    --no-feature-xml ^
     ^
     || exit /B 1
 
