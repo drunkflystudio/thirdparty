@@ -8,19 +8,17 @@ echo > "%~dp0.mode-mingw" || exit /B 1
 cd /D "%~dp0Qt" || exit /B 1
 call configure ^
     -cmake-generator "MinGW Makefiles" ^
-    --prefix="%~dp0Build\MinGW64" ^
+    --prefix="%~dp0Build\MinGW" ^
     --platform="win32-g++" ^
     --confirm-license ^
     -disable-deprecated-up-to 0x060700 ^
     ^
     --appstore-compliant=yes ^
-    --force-debug-info ^
     --ltcg=no ^
     --optimize-size=yes ^
     --reduce-exports=no ^
     --release ^
-    --static ^
-    --static-runtime ^
+    --shared ^
     --unity-build ^
     ^
     --freetype=qt ^
@@ -60,7 +58,6 @@ call configure ^
     --feature-formlayout ^
     --feature-fscompleter ^
     --feature-future ^
-    --feature-gc_binaries ^
     --feature-gestures ^
     --feature-graphicseffect ^
     --feature-im ^
@@ -129,6 +126,7 @@ call configure ^
     --no-feature-f16c ^
     --no-feature-fontcombobox ^
     --no-feature-fontdialog ^
+    --no-feature-gc_binaries ^
     --no-feature-gtk3 ^
     --no-feature-hijricalendar ^
     --no-feature-icu ^
@@ -175,4 +173,4 @@ call configure ^
     ^
     || exit /B 1
 
-cmake --build . --config RelWithDebInfo --target install --parallel 4 || exit /B 1
+cmake --build . --config Release --target install --parallel 4 || exit /B 1
