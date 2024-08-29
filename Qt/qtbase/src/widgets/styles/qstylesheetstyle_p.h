@@ -5,7 +5,7 @@
 #define QSTYLESHEETSTYLE_P_H
 
 #include <QtWidgets/private/qtwidgetsglobal_p.h>
-//#include "private/qwindowsstyle_p.h"
+#include "private/qwindowsstyle_p.h"
 
 #ifndef QT_NO_STYLE_STYLESHEET
 

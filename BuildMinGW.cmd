@@ -89,6 +89,8 @@ call configure ^
     --feature-sizegrip ^
     --feature-sortfilterproxymodel ^
     --feature-standarditemmodel ^
+    --feature-style-stylesheet ^
+    --feature-style-windows ^
     --feature-syntaxhighlighter ^
     --feature-systemsemaphore ^
     --feature-tabletevent ^
@@ -153,7 +155,6 @@ call configure ^
     --no-feature-splashscreen ^
     --no-feature-sql ^
     --no-feature-stack-protector-strong ^
-    --no-feature-style-windows ^
     --no-feature-systemtrayicon ^
     --no-feature-testlib ^
     --no-feature-textdate ^
