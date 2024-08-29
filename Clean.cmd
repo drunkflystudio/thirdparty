@@ -961,3 +961,9 @@ del /F %~dp0Qt\qtwebsockets\src\websockets\preliminary_prl_for_WebSockets_step1_
 del /F %~dp0Qt\qtwebsockets\src\websockets\preliminary_prl_for_WebSockets_step2_Release.prl
 del /F %~dp0Qt\qtwebsockets\src\websockets\preliminary_prl_meta_info_for_WebSockets_Release.txt
 del /F %~dp0Qt\qtwebsockets\src\websockets\qt_lib_websockets_private.pri
+del /F %~dp0Qt\qtbase\bin\Qt6WebSockets.dll
+del /F %~dp0Qt\qtbase\lib\Qt6WebSockets.prl
+del /F %~dp0Qt\qtwebsockets\src\websockets\WebSockets.version
+del /F %~dp0Qt\qtwebsockets\src\websockets\WebSockets.version.in
+del /F %~dp0Qt\qtwebsockets\src\websockets\WebSockets_resource.rc
+del /F %~dp0Qt\qtwebsockets\src\websockets\WebSockets_resource.rc.tmp

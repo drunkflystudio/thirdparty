@@ -962,3 +962,9 @@
 /Qt/qtwebsockets/src/websockets/preliminary_prl_for_WebSockets_step2_Release.prl
 /Qt/qtwebsockets/src/websockets/preliminary_prl_meta_info_for_WebSockets_Release.txt
 /Qt/qtwebsockets/src/websockets/qt_lib_websockets_private.pri
+/Qt/qtbase/bin/Qt6WebSockets.dll
+/Qt/qtbase/lib/Qt6WebSockets.prl
+/Qt/qtwebsockets/src/websockets/WebSockets.version
+/Qt/qtwebsockets/src/websockets/WebSockets.version.in
+/Qt/qtwebsockets/src/websockets/WebSockets_resource.rc
+/Qt/qtwebsockets/src/websockets/WebSockets_resource.rc.tmp
