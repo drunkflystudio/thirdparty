@@ -1,5 +1,6 @@
 /Qt/qtbase/src/3rdparty/gradle/gradlew text eol=lf
 /Qt/qtbase/util/unicode/data/*.txt text eol=lf
+/QtBin/msvc2019_64/bin/Qt6Guid.pdb filter=drunkfly-gzip
 /Tools/mingw1120_64/**/* -text -eol
 /Tools/nodejs/**/* -text -eol
 /Tools/python/**/* -text -eol
