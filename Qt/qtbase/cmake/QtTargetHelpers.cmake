@@ -420,9 +420,9 @@ function(qt_internal_setup_cmake_config_postfix)
         if(MINGW)
             # On MinGW we don't have "d" suffix for debug libraries like on Linux,
             # unless we're building debug and release libraries in one go.
-            if(QT_GENERATOR_IS_MULTI_CONFIG)
+            #if(QT_GENERATOR_IS_MULTI_CONFIG)
                 set(default_cmake_debug_postfix "d")
-            endif()
+            #endif()
         else()
             set(default_cmake_debug_postfix "d")
         endif()

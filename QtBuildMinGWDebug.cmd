@@ -3,22 +3,22 @@ setlocal
 set PATH=%~dp0Tools\mingw1120_64\bin;%~dp0;%PATH%
 
 if exist "%~dp0.mode-html5" call "%~dp0QtClean.cmd" || exit /B 1
-if exist "%~dp0.mode-mingw-debug" call "%~dp0QtClean.cmd" || exit /B 1
-echo > "%~dp0.mode-mingw" || exit /B 1
+if exist "%~dp0.mode-mingw" call "%~dp0QtClean.cmd" || exit /B 1
+echo > "%~dp0.mode-mingw-debug" || exit /B 1
 
 cd /D "%~dp0Qt" || exit /B 1
 call configure ^
     -cmake-generator "MinGW Makefiles" ^
-    --prefix="%~dp0Build\MinGW" ^
+    --prefix="%~dp0Build\MinGWDebug" ^
     --platform="win32-g++" ^
     --confirm-license ^
     -disable-deprecated-up-to 0x060700 ^
     ^
     --appstore-compliant=yes ^
     --ltcg=no ^
-    --optimize-size=yes ^
+    --optimize-size=no ^
     --reduce-exports=no ^
-    --release ^
+    --debug ^
     --shared ^
     --unity-build ^
     ^

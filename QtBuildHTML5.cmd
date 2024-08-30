@@ -12,6 +12,7 @@ call emsdk.bat activate 3.1.50 || exit /B 1
 rem if not exist "%~dp0Build\MinGW64\bin\moc.exe" call "%~dp0QtBuildMinGW.cmd" || exit /B 1
 
 if exist "%~dp0.mode-mingw" call "%~dp0QtClean.cmd" || exit /B 1
+if exist "%~dp0.mode-mingw-debug" call "%~dp0QtClean.cmd" || exit /B 1
 echo > "%~dp0.mode-html5" || exit /B 1
 
 cd /D %EMSCRIPTEN% || exit /B 1
@@ -50,6 +51,8 @@ call configure ^
     --sse4.1=no ^
     --sse4.2=no ^
     --ssse3=no ^
+    ^
+    -skip qtnetworkauth ^
     ^
     --feature-buttongroup ^
     --feature-clipboard ^
