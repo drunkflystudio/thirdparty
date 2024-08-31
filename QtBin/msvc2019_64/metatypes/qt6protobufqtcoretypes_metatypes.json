@@ -1,0 +1,851 @@
+[
+    {
+        "classes": [
+            {
+                "className": "QUrl",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "url",
+                        "read": "url",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setUrl"
+                    }
+                ],
+                "qualifiedClassName": "QtProtobufPrivate::QtCore::QUrl",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "QChar",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "utf16CodePoint",
+                        "read": "utf16CodePoint",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QtProtobuf::uint32",
+                        "user": false,
+                        "write": "setUtf16CodePoint"
+                    }
+                ],
+                "qualifiedClassName": "QtProtobufPrivate::QtCore::QChar",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "QUuid",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "rfc4122Uuid",
+                        "read": "rfc4122Uuid",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QByteArray",
+                        "user": false,
+                        "write": "setRfc4122Uuid"
+                    }
+                ],
+                "qualifiedClassName": "QtProtobufPrivate::QtCore::QUuid",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "QTimeZone",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "offsetSeconds",
+                        "read": "offsetSeconds_p",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QtProtobuf::int32",
+                        "user": false,
+                        "write": "setOffsetSeconds_p"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "hasOffsetSeconds",
+                        "read": "hasOffsetSeconds",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "ianaId",
+                        "read": "ianaId_p",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QByteArray",
+                        "user": false,
+                        "write": "setIanaId_p"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "hasIanaId",
+                        "read": "hasIanaId",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "name": "timeSpec",
+                        "read": "timeSpec_p",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "TimeSpec",
+                        "user": false,
+                        "write": "setTimeSpec_p"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "name": "hasTimeSpec",
+                        "read": "hasTimeSpec",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "QtProtobufPrivate::QtCore::QTimeZone",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "QTime",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "millisecondsSinceMidnight",
+                        "read": "millisecondsSinceMidnight",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QtProtobuf::int32",
+                        "user": false,
+                        "write": "setMillisecondsSinceMidnight"
+                    }
+                ],
+                "qualifiedClassName": "QtProtobufPrivate::QtCore::QTime",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "QDate",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "julianDay",
+                        "read": "julianDay",
+                        "required": false,
+                        "scriptable": false,
+                        "stored": true,
+                        "type": "QtProtobuf::int64",
+                        "user": false,
+                        "write": "setJulianDay"
+                    }
+                ],
+                "qualifiedClassName": "QtProtobufPrivate::QtCore::QDate",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "QDateTime",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "utcMsecsSinceUnixEpoch",
+                        "read": "utcMsecsSinceUnixEpoch",
+                        "required": false,
+                        "scriptable": false,
+                        "stored": true,
+                        "type": "QtProtobuf::int64",
+                        "user": false,
+                        "write": "setUtcMsecsSinceUnixEpoch"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "timeZone_p",
+                        "read": "timeZone_p",
+                        "required": false,
+                        "scriptable": false,
+                        "stored": true,
+                        "type": "QtProtobufPrivate::QtCore::QTimeZone*",
+                        "user": false,
+                        "write": "setTimeZone_p"
+                    }
+                ],
+                "qualifiedClassName": "QtProtobufPrivate::QtCore::QDateTime",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "QSize",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "width",
+                        "read": "width",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QtProtobuf::int32",
+                        "user": false,
+                        "write": "setWidth"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "height",
+                        "read": "height",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QtProtobuf::int32",
+                        "user": false,
+                        "write": "setHeight"
+                    }
+                ],
+                "qualifiedClassName": "QtProtobufPrivate::QtCore::QSize",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "QSizeF",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "width",
+                        "read": "width",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false,
+                        "write": "setWidth"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "height",
+                        "read": "height",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false,
+                        "write": "setHeight"
+                    }
+                ],
+                "qualifiedClassName": "QtProtobufPrivate::QtCore::QSizeF",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "QPoint",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "x",
+                        "read": "x",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QtProtobuf::sint32",
+                        "user": false,
+                        "write": "setX"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "y",
+                        "read": "y",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QtProtobuf::sint32",
+                        "user": false,
+                        "write": "setY"
+                    }
+                ],
+                "qualifiedClassName": "QtProtobufPrivate::QtCore::QPoint",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "QPointF",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "x",
+                        "read": "x",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false,
+                        "write": "setX"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "y",
+                        "read": "y",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false,
+                        "write": "setY"
+                    }
+                ],
+                "qualifiedClassName": "QtProtobufPrivate::QtCore::QPointF",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "QRect",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "x",
+                        "read": "x",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QtProtobuf::sint32",
+                        "user": false,
+                        "write": "setX"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "y",
+                        "read": "y",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QtProtobuf::sint32",
+                        "user": false,
+                        "write": "setY"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "width",
+                        "read": "width",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QtProtobuf::int32",
+                        "user": false,
+                        "write": "setWidth"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "height",
+                        "read": "height",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QtProtobuf::int32",
+                        "user": false,
+                        "write": "setHeight"
+                    }
+                ],
+                "qualifiedClassName": "QtProtobufPrivate::QtCore::QRect",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "QRectF",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "x",
+                        "read": "x",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false,
+                        "write": "setX"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "y",
+                        "read": "y",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false,
+                        "write": "setY"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "width",
+                        "read": "width",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false,
+                        "write": "setWidth"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "height",
+                        "read": "height",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false,
+                        "write": "setHeight"
+                    }
+                ],
+                "qualifiedClassName": "QtProtobufPrivate::QtCore::QRectF",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "QVersionNumber",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "segments",
+                        "read": "segments",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QtProtobuf::int32List",
+                        "user": false,
+                        "write": "setSegments"
+                    }
+                ],
+                "qualifiedClassName": "QtProtobufPrivate::QtCore::QVersionNumber",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "QUrl_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "UrlProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "QtProtobufPrivate::QtCore::QUrl_QtProtobufNested"
+            },
+            {
+                "className": "QChar_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "Utf16CodePointProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "QtProtobufPrivate::QtCore::QChar_QtProtobufNested"
+            },
+            {
+                "className": "QUuid_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "Rfc4122UuidProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "QtProtobufPrivate::QtCore::QUuid_QtProtobufNested"
+            },
+            {
+                "className": "QTimeZone_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "OffsetSecondsProtoFieldNumber",
+                            "IanaIdProtoFieldNumber",
+                            "TimeSpecProtoFieldNumber"
+                        ]
+                    },
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "TimeSpec",
+                        "type": "int32_t",
+                        "values": [
+                            "LocalTime",
+                            "UTC"
+                        ]
+                    },
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "TimeZoneFields",
+                        "values": [
+                            "UninitializedField",
+                            "OffsetSeconds",
+                            "IanaId",
+                            "TimeSpec"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "QtProtobufPrivate::QtCore::QTimeZone_QtProtobufNested"
+            },
+            {
+                "className": "QTime_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "MillisecondsSinceMidnightProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "QtProtobufPrivate::QtCore::QTime_QtProtobufNested"
+            },
+            {
+                "className": "QDate_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "JulianDayProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "QtProtobufPrivate::QtCore::QDate_QtProtobufNested"
+            },
+            {
+                "className": "QDateTime_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "UtcMsecsSinceUnixEpochProtoFieldNumber",
+                            "TimeZoneProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "QtProtobufPrivate::QtCore::QDateTime_QtProtobufNested"
+            },
+            {
+                "className": "QSize_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "WidthProtoFieldNumber",
+                            "HeightProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "QtProtobufPrivate::QtCore::QSize_QtProtobufNested"
+            },
+            {
+                "className": "QSizeF_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "WidthProtoFieldNumber",
+                            "HeightProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "QtProtobufPrivate::QtCore::QSizeF_QtProtobufNested"
+            },
+            {
+                "className": "QPoint_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "XProtoFieldNumber",
+                            "YProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "QtProtobufPrivate::QtCore::QPoint_QtProtobufNested"
+            },
+            {
+                "className": "QPointF_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "XProtoFieldNumber",
+                            "YProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "QtProtobufPrivate::QtCore::QPointF_QtProtobufNested"
+            },
+            {
+                "className": "QRect_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "XProtoFieldNumber",
+                            "YProtoFieldNumber",
+                            "WidthProtoFieldNumber",
+                            "HeightProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "QtProtobufPrivate::QtCore::QRect_QtProtobufNested"
+            },
+            {
+                "className": "QRectF_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "XProtoFieldNumber",
+                            "YProtoFieldNumber",
+                            "WidthProtoFieldNumber",
+                            "HeightProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "QtProtobufPrivate::QtCore::QRectF_QtProtobufNested"
+            },
+            {
+                "className": "QVersionNumber_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "SegmentsProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "QtProtobufPrivate::QtCore::QVersionNumber_QtProtobufNested"
+            }
+        ],
+        "inputFile": "QtCore.qpb.h",
+        "outputRevision": 68
+    }
+]

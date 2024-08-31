@@ -1,0 +1,1969 @@
+[
+    {
+        "classes": [
+            {
+                "className": "Any",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "typeUrl",
+                        "read": "typeUrl",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setTypeUrl"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "value",
+                        "read": "value",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QByteArray",
+                        "user": false,
+                        "write": "setValue"
+                    }
+                ],
+                "qualifiedClassName": "google::protobuf::Any",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "Any_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "TypeUrlProtoFieldNumber",
+                            "ValueProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "google::protobuf::Any_QtProtobufNested"
+            }
+        ],
+        "inputFile": "any.qpb.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "Api",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "name",
+                        "read": "name",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setName"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "methodsData",
+                        "read": "methods",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "google::protobuf::MethodRepeated",
+                        "user": false,
+                        "write": "setMethods"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "optionsData",
+                        "read": "options",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "google::protobuf::OptionRepeated",
+                        "user": false,
+                        "write": "setOptions"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "version",
+                        "read": "version",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setVersion"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "name": "sourceContext_p",
+                        "read": "sourceContext_p",
+                        "required": false,
+                        "scriptable": false,
+                        "stored": true,
+                        "type": "google::protobuf::SourceContext*",
+                        "user": false,
+                        "write": "setSourceContext_p"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "name": "mixinsData",
+                        "read": "mixins",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "google::protobuf::MixinRepeated",
+                        "user": false,
+                        "write": "setMixins"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 6,
+                        "name": "syntax",
+                        "read": "syntax",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "google::protobuf::SyntaxGadget::Syntax",
+                        "user": false,
+                        "write": "setSyntax"
+                    }
+                ],
+                "qualifiedClassName": "google::protobuf::Api",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "Method",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "name",
+                        "read": "name",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setName"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "requestTypeUrl",
+                        "read": "requestTypeUrl",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setRequestTypeUrl"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "requestStreaming",
+                        "read": "requestStreaming",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setRequestStreaming"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "responseTypeUrl",
+                        "read": "responseTypeUrl",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setResponseTypeUrl"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "name": "responseStreaming",
+                        "read": "responseStreaming",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setResponseStreaming"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "name": "optionsData",
+                        "read": "options",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "google::protobuf::OptionRepeated",
+                        "user": false,
+                        "write": "setOptions"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 6,
+                        "name": "syntax",
+                        "read": "syntax",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "google::protobuf::SyntaxGadget::Syntax",
+                        "user": false,
+                        "write": "setSyntax"
+                    }
+                ],
+                "qualifiedClassName": "google::protobuf::Method",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "Mixin",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "name",
+                        "read": "name",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setName"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "root",
+                        "read": "root",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setRoot"
+                    }
+                ],
+                "qualifiedClassName": "google::protobuf::Mixin",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "Api_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "NameProtoFieldNumber",
+                            "MethodsProtoFieldNumber",
+                            "OptionsProtoFieldNumber",
+                            "VersionProtoFieldNumber",
+                            "SourceContextProtoFieldNumber",
+                            "MixinsProtoFieldNumber",
+                            "SyntaxProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "google::protobuf::Api_QtProtobufNested"
+            },
+            {
+                "className": "Method_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "NameProtoFieldNumber",
+                            "RequestTypeUrlProtoFieldNumber",
+                            "RequestStreamingProtoFieldNumber",
+                            "ResponseTypeUrlProtoFieldNumber",
+                            "ResponseStreamingProtoFieldNumber",
+                            "OptionsProtoFieldNumber",
+                            "SyntaxProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "google::protobuf::Method_QtProtobufNested"
+            },
+            {
+                "className": "Mixin_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "NameProtoFieldNumber",
+                            "RootProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "google::protobuf::Mixin_QtProtobufNested"
+            }
+        ],
+        "inputFile": "api.qpb.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "Duration",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "seconds",
+                        "read": "seconds",
+                        "required": false,
+                        "scriptable": false,
+                        "stored": true,
+                        "type": "QtProtobuf::int64",
+                        "user": false,
+                        "write": "setSeconds"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "nanos",
+                        "read": "nanos",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QtProtobuf::int32",
+                        "user": false,
+                        "write": "setNanos"
+                    }
+                ],
+                "qualifiedClassName": "google::protobuf::Duration",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "Duration_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "SecondsProtoFieldNumber",
+                            "NanosProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "google::protobuf::Duration_QtProtobufNested"
+            }
+        ],
+        "inputFile": "duration.qpb.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "Empty",
+                "gadget": true,
+                "qualifiedClassName": "google::protobuf::Empty",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "Empty_QtProtobufNested",
+                "namespace": true,
+                "qualifiedClassName": "google::protobuf::Empty_QtProtobufNested"
+            }
+        ],
+        "inputFile": "empty.qpb.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "FieldMask",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "paths",
+                        "read": "paths",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QStringList",
+                        "user": false,
+                        "write": "setPaths"
+                    }
+                ],
+                "qualifiedClassName": "google::protobuf::FieldMask",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "FieldMask_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "PathsProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "google::protobuf::FieldMask_QtProtobufNested"
+            }
+        ],
+        "inputFile": "field_mask.qpb.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "Any",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "typeUrl",
+                        "read": "typeUrl",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setTypeUrl"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "value",
+                        "read": "value",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QByteArray",
+                        "user": false,
+                        "write": "setValue"
+                    }
+                ],
+                "qualifiedClassName": "QtProtobuf::Any",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qprotobufanysupport.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "SourceContext",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "fileName",
+                        "read": "fileName",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setFileName"
+                    }
+                ],
+                "qualifiedClassName": "google::protobuf::SourceContext",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "SourceContext_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "FileNameProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "google::protobuf::SourceContext_QtProtobufNested"
+            }
+        ],
+        "inputFile": "source_context.qpb.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "Struct",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "fields",
+                        "read": "fields",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "google::protobuf::Struct::FieldsEntry",
+                        "user": false,
+                        "write": "setFields"
+                    }
+                ],
+                "qualifiedClassName": "google::protobuf::Struct",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "Value",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "nullValue",
+                        "read": "nullValue_p",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "google::protobuf::NullValueGadget::NullValue",
+                        "user": false,
+                        "write": "setNullValue_p"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "hasNullValue",
+                        "read": "hasNullValue",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "numberValue",
+                        "read": "numberValue_p",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false,
+                        "write": "setNumberValue_p"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "hasNumberValue",
+                        "read": "hasNumberValue",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "name": "stringValue",
+                        "read": "stringValue_p",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setStringValue_p"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "name": "hasStringValue",
+                        "read": "hasStringValue",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 6,
+                        "name": "boolValue",
+                        "read": "boolValue_p",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setBoolValue_p"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 7,
+                        "name": "hasBoolValue",
+                        "read": "hasBoolValue",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 8,
+                        "name": "structValue_p",
+                        "read": "structValue_p",
+                        "required": false,
+                        "scriptable": false,
+                        "stored": true,
+                        "type": "google::protobuf::Struct*",
+                        "user": false,
+                        "write": "setStructValue_p"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 9,
+                        "name": "hasStructValue",
+                        "read": "hasStructValue",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 10,
+                        "name": "listValue_p",
+                        "read": "listValue_p",
+                        "required": false,
+                        "scriptable": false,
+                        "stored": true,
+                        "type": "google::protobuf::ListValue*",
+                        "user": false,
+                        "write": "setListValue_p"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 11,
+                        "name": "hasListValue",
+                        "read": "hasListValue",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "google::protobuf::Value",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "ListValue",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "valuesData",
+                        "read": "values",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "google::protobuf::ValueRepeated",
+                        "user": false,
+                        "write": "setValues"
+                    }
+                ],
+                "qualifiedClassName": "google::protobuf::ListValue",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "NullValueGadget",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "NullValue",
+                        "type": "int32_t",
+                        "values": [
+                            "NULL_VALUE"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "google::protobuf::NullValueGadget"
+            },
+            {
+                "className": "Struct_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "FieldsProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "google::protobuf::Struct_QtProtobufNested"
+            },
+            {
+                "className": "Value_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "NullValueProtoFieldNumber",
+                            "NumberValueProtoFieldNumber",
+                            "StringValueProtoFieldNumber",
+                            "BoolValueProtoFieldNumber",
+                            "StructValueProtoFieldNumber",
+                            "ListValueProtoFieldNumber"
+                        ]
+                    },
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "KindFields",
+                        "values": [
+                            "UninitializedField",
+                            "NullValue",
+                            "NumberValue",
+                            "StringValue",
+                            "BoolValue",
+                            "StructValue",
+                            "ListValue"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "google::protobuf::Value_QtProtobufNested"
+            },
+            {
+                "className": "ListValue_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "ValuesProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "google::protobuf::ListValue_QtProtobufNested"
+            }
+        ],
+        "inputFile": "struct.qpb.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "Timestamp",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "seconds",
+                        "read": "seconds",
+                        "required": false,
+                        "scriptable": false,
+                        "stored": true,
+                        "type": "QtProtobuf::int64",
+                        "user": false,
+                        "write": "setSeconds"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "nanos",
+                        "read": "nanos",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QtProtobuf::int32",
+                        "user": false,
+                        "write": "setNanos"
+                    }
+                ],
+                "qualifiedClassName": "google::protobuf::Timestamp",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "Timestamp_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "SecondsProtoFieldNumber",
+                            "NanosProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "google::protobuf::Timestamp_QtProtobufNested"
+            }
+        ],
+        "inputFile": "timestamp.qpb.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "Type",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "name",
+                        "read": "name",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setName"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "fieldsData",
+                        "read": "fields",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "google::protobuf::FieldRepeated",
+                        "user": false,
+                        "write": "setFields"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "oneofs",
+                        "read": "oneofs",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QStringList",
+                        "user": false,
+                        "write": "setOneofs"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "optionsData",
+                        "read": "options",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "google::protobuf::OptionRepeated",
+                        "user": false,
+                        "write": "setOptions"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "name": "sourceContext_p",
+                        "read": "sourceContext_p",
+                        "required": false,
+                        "scriptable": false,
+                        "stored": true,
+                        "type": "google::protobuf::SourceContext*",
+                        "user": false,
+                        "write": "setSourceContext_p"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "name": "syntax",
+                        "read": "syntax",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "google::protobuf::SyntaxGadget::Syntax",
+                        "user": false,
+                        "write": "setSyntax"
+                    }
+                ],
+                "qualifiedClassName": "google::protobuf::Type",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "Field",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "kind",
+                        "read": "kind",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "Kind",
+                        "user": false,
+                        "write": "setKind"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "cardinality",
+                        "read": "cardinality",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "Cardinality",
+                        "user": false,
+                        "write": "setCardinality"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "number",
+                        "read": "number",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QtProtobuf::int32",
+                        "user": false,
+                        "write": "setNumber"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "name",
+                        "read": "name",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setName"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "name": "typeUrl",
+                        "read": "typeUrl",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setTypeUrl"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "name": "oneofIndex",
+                        "read": "oneofIndex",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QtProtobuf::int32",
+                        "user": false,
+                        "write": "setOneofIndex"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 6,
+                        "name": "packed",
+                        "read": "packed",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setPacked"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 7,
+                        "name": "optionsData",
+                        "read": "options",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "google::protobuf::OptionRepeated",
+                        "user": false,
+                        "write": "setOptions"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 8,
+                        "name": "jsonName",
+                        "read": "jsonName",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setJsonName"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 9,
+                        "name": "defaultValue",
+                        "read": "defaultValue",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setDefaultValue"
+                    }
+                ],
+                "qualifiedClassName": "google::protobuf::Field",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "Enum",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "name",
+                        "read": "name",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setName"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "enumvalueData",
+                        "read": "enumvalue",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "google::protobuf::EnumValueRepeated",
+                        "user": false,
+                        "write": "setEnumvalue"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "optionsData",
+                        "read": "options",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "google::protobuf::OptionRepeated",
+                        "user": false,
+                        "write": "setOptions"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "sourceContext_p",
+                        "read": "sourceContext_p",
+                        "required": false,
+                        "scriptable": false,
+                        "stored": true,
+                        "type": "google::protobuf::SourceContext*",
+                        "user": false,
+                        "write": "setSourceContext_p"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "name": "syntax",
+                        "read": "syntax",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "google::protobuf::SyntaxGadget::Syntax",
+                        "user": false,
+                        "write": "setSyntax"
+                    }
+                ],
+                "qualifiedClassName": "google::protobuf::Enum",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "EnumValue",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "name",
+                        "read": "name",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setName"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "number",
+                        "read": "number",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QtProtobuf::int32",
+                        "user": false,
+                        "write": "setNumber"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "optionsData",
+                        "read": "options",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "google::protobuf::OptionRepeated",
+                        "user": false,
+                        "write": "setOptions"
+                    }
+                ],
+                "qualifiedClassName": "google::protobuf::EnumValue",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "Option",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "name",
+                        "read": "name",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setName"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "value",
+                        "read": "value",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QtProtobuf::Any",
+                        "user": false,
+                        "write": "setValue"
+                    }
+                ],
+                "qualifiedClassName": "google::protobuf::Option",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "SyntaxGadget",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "Syntax",
+                        "type": "int32_t",
+                        "values": [
+                            "SYNTAX_PROTO2",
+                            "SYNTAX_PROTO3"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "google::protobuf::SyntaxGadget"
+            },
+            {
+                "className": "Type_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "NameProtoFieldNumber",
+                            "FieldsProtoFieldNumber",
+                            "OneofsProtoFieldNumber",
+                            "OptionsProtoFieldNumber",
+                            "SourceContextProtoFieldNumber",
+                            "SyntaxProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "google::protobuf::Type_QtProtobufNested"
+            },
+            {
+                "className": "Field_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "KindProtoFieldNumber",
+                            "CardinalityProtoFieldNumber",
+                            "NumberProtoFieldNumber",
+                            "NameProtoFieldNumber",
+                            "TypeUrlProtoFieldNumber",
+                            "OneofIndexProtoFieldNumber",
+                            "PackedProtoFieldNumber",
+                            "OptionsProtoFieldNumber",
+                            "JsonNameProtoFieldNumber",
+                            "DefaultValueProtoFieldNumber"
+                        ]
+                    },
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "Kind",
+                        "type": "int32_t",
+                        "values": [
+                            "TYPE_UNKNOWN",
+                            "TYPE_DOUBLE",
+                            "TYPE_FLOAT",
+                            "TYPE_INT64",
+                            "TYPE_UINT64",
+                            "TYPE_INT32",
+                            "TYPE_FIXED64",
+                            "TYPE_FIXED32",
+                            "TYPE_BOOL",
+                            "TYPE_STRING",
+                            "TYPE_GROUP",
+                            "TYPE_MESSAGE",
+                            "TYPE_BYTES",
+                            "TYPE_UINT32",
+                            "TYPE_ENUM",
+                            "TYPE_SFIXED32",
+                            "TYPE_SFIXED64",
+                            "TYPE_SINT32",
+                            "TYPE_SINT64"
+                        ]
+                    },
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "Cardinality",
+                        "type": "int32_t",
+                        "values": [
+                            "CARDINALITY_UNKNOWN",
+                            "CARDINALITY_OPTIONAL",
+                            "CARDINALITY_REQUIRED",
+                            "CARDINALITY_REPEATED"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "google::protobuf::Field_QtProtobufNested"
+            },
+            {
+                "className": "Enum_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "NameProtoFieldNumber",
+                            "EnumvalueProtoFieldNumber",
+                            "OptionsProtoFieldNumber",
+                            "SourceContextProtoFieldNumber",
+                            "SyntaxProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "google::protobuf::Enum_QtProtobufNested"
+            },
+            {
+                "className": "EnumValue_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "NameProtoFieldNumber",
+                            "NumberProtoFieldNumber",
+                            "OptionsProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "google::protobuf::EnumValue_QtProtobufNested"
+            },
+            {
+                "className": "Option_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "NameProtoFieldNumber",
+                            "ValueProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "google::protobuf::Option_QtProtobufNested"
+            }
+        ],
+        "inputFile": "type.qpb.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "DoubleValue",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "value",
+                        "read": "value",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false,
+                        "write": "setValue"
+                    }
+                ],
+                "qualifiedClassName": "google::protobuf::DoubleValue",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "FloatValue",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "value",
+                        "read": "value",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "float",
+                        "user": false,
+                        "write": "setValue"
+                    }
+                ],
+                "qualifiedClassName": "google::protobuf::FloatValue",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "Int64Value",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "value",
+                        "read": "value",
+                        "required": false,
+                        "scriptable": false,
+                        "stored": true,
+                        "type": "QtProtobuf::int64",
+                        "user": false,
+                        "write": "setValue"
+                    }
+                ],
+                "qualifiedClassName": "google::protobuf::Int64Value",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "UInt64Value",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "value",
+                        "read": "value",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QtProtobuf::uint64",
+                        "user": false,
+                        "write": "setValue"
+                    }
+                ],
+                "qualifiedClassName": "google::protobuf::UInt64Value",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "Int32Value",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "value",
+                        "read": "value",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QtProtobuf::int32",
+                        "user": false,
+                        "write": "setValue"
+                    }
+                ],
+                "qualifiedClassName": "google::protobuf::Int32Value",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "UInt32Value",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "value",
+                        "read": "value",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QtProtobuf::uint32",
+                        "user": false,
+                        "write": "setValue"
+                    }
+                ],
+                "qualifiedClassName": "google::protobuf::UInt32Value",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "BoolValue",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "value",
+                        "read": "value",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setValue"
+                    }
+                ],
+                "qualifiedClassName": "google::protobuf::BoolValue",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "StringValue",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "value",
+                        "read": "value",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setValue"
+                    }
+                ],
+                "qualifiedClassName": "google::protobuf::StringValue",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "BytesValue",
+                "gadget": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "value",
+                        "read": "value",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QByteArray",
+                        "user": false,
+                        "write": "setValue"
+                    }
+                ],
+                "qualifiedClassName": "google::protobuf::BytesValue",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QProtobufMessage"
+                    }
+                ]
+            },
+            {
+                "className": "DoubleValue_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "ValueProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "google::protobuf::DoubleValue_QtProtobufNested"
+            },
+            {
+                "className": "FloatValue_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "ValueProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "google::protobuf::FloatValue_QtProtobufNested"
+            },
+            {
+                "className": "Int64Value_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "ValueProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "google::protobuf::Int64Value_QtProtobufNested"
+            },
+            {
+                "className": "UInt64Value_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "ValueProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "google::protobuf::UInt64Value_QtProtobufNested"
+            },
+            {
+                "className": "Int32Value_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "ValueProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "google::protobuf::Int32Value_QtProtobufNested"
+            },
+            {
+                "className": "UInt32Value_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "ValueProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "google::protobuf::UInt32Value_QtProtobufNested"
+            },
+            {
+                "className": "BoolValue_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "ValueProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "google::protobuf::BoolValue_QtProtobufNested"
+            },
+            {
+                "className": "StringValue_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "ValueProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "google::protobuf::StringValue_QtProtobufNested"
+            },
+            {
+                "className": "BytesValue_QtProtobufNested",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "QtProtobufFieldEnum",
+                        "values": [
+                            "ValueProtoFieldNumber"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "google::protobuf::BytesValue_QtProtobufNested"
+            }
+        ],
+        "inputFile": "wrappers.qpb.h",
+        "outputRevision": 68
+    }
+]
