@@ -106,7 +106,7 @@ string(REGEX REPLACE     "${protobuf_VERSION_REGEX}" "\\3"
 string(REGEX REPLACE     "${protobuf_VERSION_REGEX}" "\\5"
   protobuf_VERSION_PRERELEASE "${protobuf_VERSION_STRING}")
 
-message(STATUS "${protobuf_VERSION_PRERELEASE}")
+#message(STATUS "${protobuf_VERSION_PRERELEASE}")
 
 # Package version
 set(protobuf_VERSION
@@ -117,7 +117,7 @@ if(protobuf_VERSION_PRERELEASE)
 else()
   set(protobuf_VERSION "${protobuf_VERSION}.0")
 endif()
-message(STATUS "${protobuf_VERSION}")
+#message(STATUS "${protobuf_VERSION}")
 
 if(protobuf_VERBOSE)
   message(STATUS "Configuration script parsing status [")
@@ -299,7 +299,10 @@ if (protobuf_BUILD_TESTS)
   include(${protobuf_SOURCE_DIR}/cmake/gtest.cmake)
 endif (protobuf_BUILD_TESTS)
 
+set(BUILD_SHARED_LIBS FALSE)
+add_subdirectory(third_party/abseil-cpp)
 include(${protobuf_SOURCE_DIR}/cmake/abseil-cpp.cmake)
+set(BUILD_SHARED_LIBS TRUE)
 
 if (protobuf_BUILD_PROTOBUF_BINARIES)
   include(${protobuf_SOURCE_DIR}/cmake/utf8_range.cmake)
