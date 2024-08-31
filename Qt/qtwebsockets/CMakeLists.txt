@@ -17,7 +17,7 @@ project(QtWebSockets # special case
 set(QT_USE_FIXED_QT_ADD_RESOURCE_BASE TRUE)
 
 find_package(Qt6 ${PROJECT_VERSION} CONFIG REQUIRED COMPONENTS BuildInternals Core Network) # special case
-find_package(Qt6 ${PROJECT_VERSION} CONFIG OPTIONAL_COMPONENTS Quick QuickTest) # special case
+#find_package(Qt6 ${PROJECT_VERSION} CONFIG OPTIONAL_COMPONENTS Quick QuickTest) # special case
 qt_internal_project_setup()
 
 if(NOT TARGET Qt::Network)

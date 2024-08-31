@@ -1,6 +1,8 @@
 @echo off
 setlocal
 set PATH=%~dp0Tools\mingw1120_64\bin;%~dp0;%PATH%
+set CMAKE_INCLUDE_PATH=%~dp0OpenSSL/include
+set CMAKE_LIBRARY_PATH=%~dp0OpenSSL/lib/VC/x64/MT
 
 if exist "%~dp0.mode-html5" call "%~dp0QtClean.cmd" || exit /B 1
 if exist "%~dp0.mode-mingw-debug" call "%~dp0QtClean.cmd" || exit /B 1
@@ -14,6 +16,9 @@ call configure ^
     --confirm-license ^
     -disable-deprecated-up-to 0x060700 ^
     ^
+    -I "%~dp0OpenSSL/include" ^
+    -L "%~dp0OpenSSL/lib/VC/x64/MTd" ^
+    ^
     --appstore-compliant=yes ^
     --ltcg=no ^
     --optimize-size=yes ^
@@ -24,7 +29,7 @@ call configure ^
     ^
     --freetype=qt ^
     --harfbuzz=qt ^
-    --openssl=no ^
+    --openssl=linked ^
     --zlib=qt ^
     --zstd=no ^
     ^
@@ -45,6 +50,10 @@ call configure ^
     --feature-completer ^
     --feature-concurrent ^
     --feature-datawidgetmapper ^
+    --feature-direct2d ^
+    --feature-direct2d1_1 ^
+    --feature-directwrite ^
+    --feature-directwrite3 ^
     --feature-dockwidget ^
     --feature-doubleconversion ^
     --feature-draganddrop ^
@@ -118,10 +127,6 @@ call configure ^
     --no-feature-datetimeparser ^
     --no-feature-dbus ^
     --no-feature-dial ^
-    --no-feature-direct2d ^
-    --no-feature-direct2d1_1 ^
-    --no-feature-directwrite ^
-    --no-feature-directwrite3 ^
     --no-feature-easingcurve ^
     --no-feature-eglfs ^
     --no-feature-errormessage ^
@@ -141,6 +146,7 @@ call configure ^
     --no-feature-keysequenceedit ^
     --no-feature-kms ^
     --no-feature-lcdnumber ^
+    --no-feature-localserver ^
     --no-feature-macdeployqt ^
     --no-feature-mdiarea ^
     --no-feature-movie ^
@@ -164,7 +170,9 @@ call configure ^
     --no-feature-textodfwriter ^
     --no-feature-timezone ^
     --no-feature-toolbox ^
+    --no-feature-topleveldomain ^
     --no-feature-transposeproxymodel ^
+    --no-feature-udpsocket ^
     --no-feature-undostack ^
     --no-feature-undocommand ^
     --no-feature-undogroup ^

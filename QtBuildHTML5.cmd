@@ -154,6 +154,7 @@ call configure ^
     --no-feature-keysequenceedit ^
     --no-feature-kms ^
     --no-feature-lcdnumber ^
+    --no-feature-localserver ^
     --no-feature-library ^
     --no-feature-macdeployqt ^
     --no-feature-mdiarea ^
@@ -183,6 +184,7 @@ call configure ^
     --no-feature-timezone ^
     --no-feature-toolbox ^
     --no-feature-transposeproxymodel ^
+    --no-feature-udpsocket ^
     --no-feature-undostack ^
     --no-feature-undocommand ^
     --no-feature-undogroup ^
