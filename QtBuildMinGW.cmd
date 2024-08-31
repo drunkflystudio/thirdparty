@@ -11,7 +11,7 @@ echo > "%~dp0.mode-mingw" || exit /B 1
 cd /D "%~dp0Qt" || exit /B 1
 call configure ^
     -cmake-generator "MinGW Makefiles" ^
-    --prefix="%~dp0Build\MinGW" ^
+    --prefix="%~dp0Build\Qt.MinGW" ^
     --platform="win32-g++" ^
     --confirm-license ^
     -disable-deprecated-up-to 0x060700 ^
