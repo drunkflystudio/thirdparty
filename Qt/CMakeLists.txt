@@ -3,7 +3,6 @@
 cmake_minimum_required(VERSION 3.16...3.21)
 set(QT_SILENCE_CMAKE_GENERATOR_WARNING TRUE)
 add_definitions(-DQT_NO_DEBUG_OUTPUT)
-add_definitions(-DQT_NO_QUATERNION)
 
 # set QT_SUPERBUILD early, so that qtbase/.cmake.conf can check it
 set(QT_SUPERBUILD TRUE)

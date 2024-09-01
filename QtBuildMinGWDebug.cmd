@@ -1,8 +1,10 @@
 @echo off
 setlocal
-set PATH=%~dp0Tools\mingw1120_64\bin;%~dp0;%PATH%
+set PATH=%~dp0Tools\mingw1120_64\bin;%~dp0Build\Protobuf.MinGWDebug\bin;%PATH%
 set CMAKE_INCLUDE_PATH=%~dp0OpenSSL/include
 set CMAKE_LIBRARY_PATH=%~dp0OpenSSL/lib/VC/x64/MTd
+
+if not exist "%~dp0Build\Protobuf.MinGWDebug\bin\protoc.exe" call ProtobufBuildMinGWDebug.cmd || exit /B 1
 
 if exist "%~dp0.mode-html5" call "%~dp0QtClean.cmd" || exit /B 1
 if exist "%~dp0.mode-mingw" call "%~dp0QtClean.cmd" || exit /B 1
