@@ -26,3 +26,7 @@ cmake -G "MinGW Makefiles" ^
 if errorlevel 1 exit /B 1
 
 cmake --build . --target install --parallel 4 || exit /B 1
+
+copy /b "%~dp0Tools\mingw1120_64\bin\libwinpthread-1.dll" "%~dp0Build\Protobuf.MinGW\bin"
+copy /b "%~dp0Tools\mingw1120_64\bin\libstdc++-6.dll" "%~dp0Build\Protobuf.MinGW\bin"
+copy /b "%~dp0Tools\mingw1120_64\bin\libgcc_s_seh-1.dll" "%~dp0Build\Protobuf.MinGW\bin"
