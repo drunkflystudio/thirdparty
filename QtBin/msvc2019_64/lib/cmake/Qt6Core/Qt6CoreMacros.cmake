@@ -1005,10 +1005,11 @@ if(NOT QT_NO_CREATE_VERSIONLESS_FUNCTIONS)
 endif()
 
 function(_qt_internal_assign_to_internal_targets_folder target)
-    get_property(folder_name GLOBAL PROPERTY QT_TARGETS_FOLDER)
-    if(NOT "${folder_name}" STREQUAL "")
-        set_property(TARGET ${target} PROPERTY FOLDER "${folder_name}")
-    endif()
+    #get_property(folder_name GLOBAL PROPERTY QT_TARGETS_FOLDER)
+    #if(NOT "${folder_name}" STREQUAL "")
+    #    set_property(TARGET ${target} PROPERTY FOLDER "${folder_name}")
+    #endif()
+    set_property(TARGET ${target} PROPERTY FOLDER "CMake/Qt")
 endfunction()
 
 function(_qt_internal_get_target_autogen_build_dir target out_var)
@@ -2657,6 +2658,7 @@ function(_qt_internal_add_library target)
     endif()
 
     add_library(${target} ${type_to_create} ${arg_UNPARSED_ARGUMENTS})
+    _qt_internal_assign_to_internal_targets_folder("${target}")
     _qt_internal_disable_autorcc_zstd_when_not_supported("${target}")
     _qt_internal_set_up_static_runtime_library(${target})
 
