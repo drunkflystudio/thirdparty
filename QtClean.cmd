@@ -1550,3 +1550,9 @@ del /F %~dp0Qt\qtgrpc\src\protobuf\preliminary_prl_for_Protobuf_step2_Debug.prl
 del /F %~dp0Qt\qtgrpc\src\protobufqttypes\protobufqtcoretypes\preliminary_prl_for_ProtobufQtCoreTypes_step2_Debug.prl
 del /F %~dp0Qt\qtgrpc\src\protobufqttypes\protobufqtguitypes\preliminary_prl_for_ProtobufQtGuiTypes_step2_Debug.prl
 del /F %~dp0Qt\qtgrpc\src\wellknown\preliminary_prl_for_ProtobufWellKnownTypes_step2_Debug.prl
+del /F %~dp0Qt\.ninja_deps
+del /F %~dp0Qt\.ninja_log
+del /F %~dp0Qt\build.ninja
+del /F %~dp0Qt\qtbase\config.tests\arch\.ninja_deps
+del /F %~dp0Qt\qtbase\config.tests\arch\.ninja_log
+del /F %~dp0Qt\qtbase\config.tests\arch\build.ninja
