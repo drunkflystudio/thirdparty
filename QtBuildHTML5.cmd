@@ -4,8 +4,8 @@ set EMSCRIPTEN=%~dp0Tools\emsdk
 set PATH=%EMSCRIPTEN%\upstream\emscripten;%~dp0Tools\python;%~dp0Tools\mingw1120_64\bin;%~dp0Build\Protobuf.MinGW\bin;%PATH%
 
 if not exist %EMSCRIPTEN%\emsdk.bat git submodule update --init --recursive || exit /B 1
-if not exist "%~dp0Build\Protobuf.HTML5\lib\libprotobuf.a" call ProtobufBuildHTML5.cmd || exit /B 1
-if not exist "%~dp0Build\Protobuf.MinGW\bin\protoc.exe" call ProtobufBuildMinGW.cmd || exit /B 1
+if not exist "%~dp0Build\Protobuf.HTML5\lib\libprotobuf.a" call "%~dp0ProtobufBuildHTML5.cmd" || exit /B 1
+if not exist "%~dp0Build\Protobuf.MinGW\bin\protoc.exe" call "%~dp0ProtobufBuildMinGW.cmd" || exit /B 1
 
 cd /D %EMSCRIPTEN% || exit /B 1
 call emsdk.bat install 3.1.50 || exit /B 1
